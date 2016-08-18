@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<title>Lewin Cary</title>
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+	</head>
+	
+	<style> 
+
+
+		#background_pic_container {
+			background: url("images/bg1.jpg") no-repeat center center; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 65vh;
+		}
+
+		.vertical_align {
+            display: flex;
+            align-items: center;
+        }
+
+        .horizontal_align {
+            margin: auto;
+            display: block;
+        }
+
+        .hta {
+            text-align: center;
+        }
+
+        #name_container {
+        	background-color: rgba(191, 191, 191, 0.5);
+        	padding: 20px;
+        }
+
+        #name {
+        	font-size: 47px;
+            font-family: 'Lato';
+            color: #eeeeee;
+            /*border-style: solid;
+            border-color: #eee;
+            border-width: 5px;
+            padding-right: 10px;
+            padding-left: 10px;*/
+        }
+
+        #tagline {
+        	font-size: 40px;
+        	font-weight: 100;
+            font-family: 'Lato';
+            font-weight: 0.4; 
+            color: #eeeeee;
+            /*margin-top: -20px;*/
+        }
+
+        
+
+        #row2 {
+        	background: url("images/background1.jpg") no-repeat center center; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            
+        }
+
+        #row2_body {
+        	color: #bfbfbf;
+        }
+
+        .row {
+        	margin: 0px;
+        }
+
+        .bm {
+        	margin-bottom: 20px;
+        }
+
+        .tm {
+        	margin-top: 20px;
+        }
+
+        .tp {
+        	padding-top: 20px;
+        }
+
+        .bp {
+        	padding-bottom: 20px;
+        }
+
+        .symbol {
+        	font-size: 50px;
+        	color: #bfbfbf;
+        }
+
+        .lrp {
+        	padding-left: 15px;
+        	padding-right: 15px;
+        }
+
+        #row3 {
+        	background: url("images/background10.jpg") no-repeat center center; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 300px;
+        }
+
+        #row5 {
+        	background: url("images/background17.jpg") no-repeat center center; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 300px;
+        }
+
+        #row4 {
+        	/*background-color: rgba(0,0,0, 1);*/
+        }
+
+        .nav_fixed {
+        	position: fixed;
+        	left: 0;
+        	top: 0;
+        	z-index: 999;
+        	border: 0px;
+        	height: 20px;
+        	
+        }
+
+        .nav_content {
+        	font-size: 30px;
+            font-family: 'Lato';
+            color: #bfbfbf;
+        }
+
+        h1 {
+        	font-size: 47px;
+            font-family: 'Lato';
+            color: #bfbfbf;
+        }
+
+        .contact {
+        	font-size: 20px;
+        }
+
+        .standard_text {
+        	color: #bfbfbf;
+        }
+
+        .transparent2 {
+        	background: rgba(255, 255, 255, 0.0);
+        }
+        
+        .fade_out {
+        	-webkit-transition: 0.4s;
+        	-moz-transition: 0.4s;
+        	-ms-transition: 0.4s;
+        	-o-transition: 0.4s;
+        	transition: 0.4s;
+        	background: rgba(255, 255, 255, 0.0);
+        }
+
+        .fade_in {
+        	-webkit-transition: 0.5s;
+        	-moz-transition: 0.5s;
+        	-ms-transition: 0.5s;
+        	-o-transition: 0.5s;
+        	transition: 0.5s;
+        	background: rgba(255, 255, 255, 0.9);
+        }
+
+        .nav_text {
+        	font-size: 15px;
+        }
+
+        .small_message {
+        	font-size: 15px;
+        	color: #bfbfbf;
+        }
+
+        #resume {
+        	color: #000;
+        	margin-top: 15px;
+        }
+
+        .card {
+        	/*height: 425px;*/
+        	border-radius: 5px;
+
+        	/*margin: 0px;*/
+        	/*border-style: solid;
+        	border-color: rgba(20, 20, 20, 0.9);
+        	border-width: 20px;*/
+
+        }
+
+        .card-image {
+        	border-radius: 5px;
+        }
+
+        .card-title {
+        	background-color: rgba(0, 0, 0, 0.2);
+        	border-radius: 5px;
+        }
+
+        .contact_details {
+        	font-size: 15px;
+        	color: #bfbfbf;
+        }
+
+        .media_icons {
+        	font-size: 40px;
+        	text-align: center;
+        	color: #ccc;
+        }
+
+        .media_icons_navbar {
+        	font-size: 20px;
+        	text-align: center;
+        	color: #ccc;
+        }
+
+        .nav_row {
+        	position: relative;
+        	top: -6px;
+        }
+
+	</style>
+
+	<body>
+		<nav class="navbar navbar-inverse nav_fixed transparent2 z-depth-0" id="nav_top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" onclick="change_bar_color()">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span> 
+					</button>
+					<div class="nav_row vertical_align">
+						<a href="#" class="lrp btn-social-icon btn-linkedin media_icons_navbar"><span class="fa fa-linkedin"></span></a>
+						<a href="http://github.com/lewincary" class="lrp btn-social-icon btn-github media_icons_navbar"><span class="fa fa-github"></span></a>
+						<a href="http://soundcloud.com/marydroppins" class="lrp btn-social-icon btn-soundcloud media_icons_navbar"><span class="fa fa-soundcloud"></span></a>
+						<a href="http://facebook.com/lewin.cary" class="lrp btn-social-icon btn-facebook media_icons_navbar"><span class="fa fa-facebook"></span></a>
+						<a href="http://google.com/lewin.cary" class="lrp btn-social-icon btn-google media_icons_navbar"><span class="fa fa-google"></span></a>
+						<a href="http://bitbucket.com/lewincary" class="lrp btn-social-icon btn-bitbucket media_icons_navbar"><span class="fa fa-bitbucket"></span></a>
+					</div>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#info" class="nav_text" onclick="info_scroll()"><span class="glyphicon glyphicon-user"></span> Info</a></li>
+						<li><a href="#projects" class="nav_text"><span class="glyphicon glyphicon-log-in"></span> Projects</a></li>
+						<li><a href="#contact" class="nav_text"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>		
+
+		<div class="row">
+			<a name="top"></a>
+			<div class="col s12 m12 vertical_align z-depth-1" id="background_pic_container"> 
+				<div class="hta horizontal_align" id="name_container"> 
+					<div id="name">LEWIN CARY</div>
+					<div class="divider"></div>
+					<div id="tagline">dev;</div>
+				</div>
+			</div>
+		</div>
+
+		<a name="info" id="info"></a>
+		<div class="row" id="row2">
+			<div class="container" id="row2_body">	
+				<div class="row symbol hta tp tm"><span class="glyphicon glyphicon-education"></span></div>
+				<div class="row bp"> 
+					<div class="col s12 m12 l4 bp bm hta">
+						<h1> Bio.</h1>
+						<div class="divider"></div>
+						<div class="tp"> 
+						Australian dev from Sydney living and studying in Palo Alto, California. Addict of dubstep, deep and anything bass - been producing experimental electronic music for the last 6 years, most recently under the Mary Droppins Project (find it <a href="http://soundcloud.com/marydroppins">here</a>). Been tinkering with computers and synthesizers for as long as I can remember.    
+						</div>
+					</div>
+					<div class="col s12 m12 l4 bp bm hta">
+						<h1> Education.</h1>
+						<div class="divider"></div>
+						<div class="tp"> 
+						Studying computer science at <a href="https://www.stanford.edu/">Stanford</a> University, California, concentrating in artificial intelligence. When I'm not lost somewhere in the stack you'll find me making noises up at CCRMA. Studied for a short while at the Australian National University. Old boy from Cranbrook School, Sydney. 
+						<br>
+						<a href="resources/lewin_cary_resume.pdf" class="waves-effect waves-light btn transparent" id="resume"><i class="glyphicon glyphicon-bookmark"></i>Resume</a>
+						</div>
+					</div>
+					<div class="col s12 m12 l4 bp bm hta">
+						<h1> Stacks.</h1>
+						<div class="divider"></div>
+						<div class="tp"> 
+						Software engineering in C/C++, Java and JS. WedDev on MEAN (Mongo, Express, Angular, Node), Laravel and LAMP (Linux, APache, MySQL, PHP/Python/Perl) stacks. Audio software dev in Chuck. Visuals in Processing when I'm feeling in the mood.
+						Check out projects I've made below. 
+						</div>
+					</div>
+				</div>
+				<div class="row symbol hta">
+					
+				</div>
+
+			</div>
+		</div>
+
+		<div class="row" id="row3">
+			<div class="container">	
+				<div class="row tp bp"></div>
+			</div>
+		</div>
+		<a name="projects"></a>
+		<div class="row" id="row4">
+			<div class="container">			
+				<div class="row symbol hta tp tm"><span class="glyphicon glyphicon-qrcode"></span></div>
+				<div class="row symbol hta"><h1>Projects</h1><div class="divider"></div></div>
+				<div class="row tp bp" id="projects_container"> 
+					<div class="col s12 m12 l4"> 
+						<div class="card bm">
+							<div class="card-image">
+								<img src="images/heap.jpg">
+								<span class="card-title">Heap Allocator</span>
+							</div>
+							<div class="card-content">
+								<p>
+									Implemented a heap allocator in C. Obtained a throughput 25% higher than the benchmark along with a benchmark utilization of 65%.
+								</p>
+							</div>
+							<div class="card-action">
+								<a href="#">Check it out here</a>
+							</div>
+						</div>
+					</div>
+					<div class="col s12 m12 l4"> 
+						<div class="card bm">
+							<div class="card-image">
+								<img src="images/pond2.jpg">
+								<span class="card-title">Pond</span>
+							</div>
+							<div class="card-content">
+								<p>
+									
+									Audio and visual synthesis from a virtual grid constructed in Chuck and Processing. A user plugs in a game controller and controls the location of a cursor in the grid. As the location changes, different sounds and visuals are synthesized.
+								</p>
+							</div>
+							<div class="card-action">
+								<a href="https://github.com/lewincary/pond">Check it on GitHub</a>
+							</div>
+						</div>
+					</div>
+					<div class="col s12 m12 l4"> 
+						<div class="card bm">
+							<div class="card-image">
+								<img src="images/slork.jpg">
+								<span class="card-title">Stanford Laptop Orchestra</span>
+							</div>
+							<div class="card-content">
+								<p>
+									Member of the CCRMA orchestra led by Prof Ge Wang. Programmed synthetic instruments to work with Ikea salad bowls and networked compositions from code. 
+								</p>
+							</div>
+							<div class="card-action">
+								<a href="https://github.com/lewincary/stanford_laptop_orchestra">Check it out on GitHub</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row bp bm">
+					<div class="col s12 m12 l4">
+						<div class="card bm">
+							<div class="card-image">
+								<img src="images/flow.jpg">
+								<span class="card-title">Flow</span>
+							</div>
+							<div class="card-content">
+								<p>
+									Meditation tool that synthesizes music from live voice input. Chant, clap or simply walk around a room and listen as you create the music. Implemented in Chuck.
+								</p>
+							</div>
+							<div class="card-action">
+								<a href="https://github.com/lewincary/flow">Check it out on GitHub</a>
+							</div>
+						</div>
+					</div>
+					<div class="col s12 m12 l4">
+						<div class="card bm">
+							<div class="card-image">
+								<img src="images/phacebook.jpg">
+								<span class="card-title">Phacebook</span>
+							</div>
+							<div class="card-content">
+								<p>
+									Built a web app modeled on Facebook (pls don't sue me Mark).
+								</p>
+							</div>
+							<div class="card-action">
+								<a href="https://github.com/lewincary/phacebook">Check it out on GitHub</a>
+							</div>
+						</div>
+					</div>
+					<div class="col s12 m12 l4">
+						<div class="card bm">
+							<div class="card-image">
+								<img src="images/spacehop.jpg">
+								<span class="card-title">Spacehop</span>
+							</div>
+							<div class="card-content">
+								<p>
+									Worked as a full-stack dev for rapidly accelerating London based property startup, redeveloping its web application as it prepares for mass scaling.
+								</p>
+							</div>
+							<div class="card-action">
+								<a href="http://spacehop.com">Check it out here</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" id="row5">
+			<div class="container">	
+				<div class="row tp bp"></div>
+			</div>
+		</div>
+
+		<a name="contact"></a>
+		<div class="row" id="row6">
+			<div class="container">	
+				<div class="row tp bp"> 
+						<div class="col s12 m12 symbol hta tp tm"><span class="glyphicon glyphicon-send"></span></div>
+						<div class="col s12 m6">
+							<div class="col s12 m12 tm bm" id="contact"> 
+								<h1>Ping me:</h1>
+								<div class="small_message">(I don't bite)</div>
+								<div class="divider"></div>
+							</div>
+							<form class="col s12">
+								<div class="row contact">
+									<div class="input-field col s6 m6">
+										<input id="first_name" type="text" class="validate">
+										<label for="first_name">First Name</label>
+									</div>
+									<div class="input-field col s6 m6">
+										<input id="last_name" type="text" class="validate">
+										<label for="last_name">Last Name</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s12 m12">
+										<input id="email" type="email" class="validate">
+										<label for="email">Email</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="input-field col s12 m12">
+										<input id="message" type="text" class="validate">
+										<label for="message">Message</label>
+									</div>
+								</div>
+							</form>
+							<div class="row hta"><a href="#" class="waves-effect waves-light btn transparent" id="resume"><i class="glyphicon glyphicon-send"></i> Send</a></div>
+						</div>
+						<div class="col s12 m6">
+							<div class="col s12 m12 tm bm" id="contact"> 
+								<h1>Details:</h1>
+								<div class="small_message">Find me @lewincary</div>
+								<div class="divider"></div>
+							</div>
+							<div class="col s12">
+								<div class="row contact">
+									<div class="col s12">
+										<div class="row contact_details">
+											<div class="col s6">Address:</div>
+											<div class="col s6">
+												Lewin Cary <br>
+												592 Mayfield Ave<br>
+												Palo Alto, 94305<br>
+												California, United States<br>
+												<br>
+											</div>
+											<div class="col s6">Email:</div>
+											<div class="col s6">
+												caryl@stanford.edu<br><br>
+											</div>
+											<div class="col s6">Phone:</div>
+											<div class="col s6">
+												US: +1 650 669 7532 <br>
+												UK: +44 7479 846 720 <br>
+											</div>
+										</div>
+									</div>
+									<div class="col s12 tp tm">
+										<div class="row">
+											<div class="col s2 bp bm">
+												<a href="#" class=" btn-social-icon btn-linkedin media_icons">
+													<span class="fa fa-linkedin"></span>
+												</a>
+											</div>
+											<div class="col s2 bp bm">
+												<a href="http://github.com/lewincary" class=" btn-social-icon btn-github media_icons">
+													<span class="fa fa-github"></span>
+												</a>
+											</div>
+											<div class="col s2 bp bm">
+												<a href="http://soundcloud.com/marydroppins" class=" btn-social-icon btn-soundcloud media_icons">
+													<span class="fa fa-soundcloud"></span>
+												</a>
+											</div>
+											<div class="col s2 bp bm">
+												<a href="http://facebook.com/lewin.cary" class=" btn-social-icon btn-facebook media_icons">
+													<span class="fa fa-facebook"></span>
+												</a>
+											</div>
+											<div class="col s2 bp bm">
+												<a href="http://google.com/lewin.cary" class="btn-social-icon btn-google media_icons">
+													<span class="fa fa-google"></span>
+												</a>
+											</div>
+											<div class="col s2 bp bm">
+												<a href="http://bitbucket.com/lewincary" class="btn-social-icon btn-bitbucket media_icons">
+													<span class="fa fa-bitbucket"></span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+
+						<div class="col s12">
+							<div class="row symbol hta tp tm"><span class="glyphicon glyphicon-camera"></span></div>
+							<div class="row hta standard_text"><span>by Unsplash</span></div>
+						</div>
+				</div>
+			</div>
+		</div>
+
+
+
+	</body>
+
+
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+	<script src="js/materialize.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+	<script> 
+		$( document ).ready(function(){
+			$(".button-collapse").sideNav();
+		})
+		$(window).scroll(function() {
+			document.getElementById('nav_top').style.background = "rgba(255, 255, 255, 0.9)";
+			document.getElementById('nav_top').classList.add('fade_in');
+			console.log("yo1");
+			if($(window).scrollTop() == 0) {
+				console.log("yo");
+				document.getElementById('nav_top').style.background = "rgba(255, 255, 255, 0.0)";
+				document.getElementById('nav_top').classList.add('fade_out');
+				document.getElementById('myNavbar').style.background = "rgba(255, 255, 255, 0.0)";
+				document.getElementById('myNavbar').classList.add('fade_out');
+			}
+		});
+		
+		var element_to_scroll_to = document.getElementById('info');
+		info_scroll = function() {
+			console.log("scroll");
+			//window.scroll(200,findPos(document.getElementById("info")));
+			element_to_scroll_to.scrollIntoView();
+		}
+		var count = 1;
+		change_bar_color = function() {
+			count++;
+			if (count%2 == 0) {
+				document.getElementById('nav_top').style.background = "rgba(255, 255, 255, 0.9)";
+				document.getElementById('nav_top').classList.add('fade_in');
+				document.getElementById('myNavbar').style.background = "rgba(255, 255, 255, 0.9)";
+				document.getElementById('myNavbar').classList.add('fade_in');
+			} else {
+				document.getElementById('nav_top').style.background = "rgba(255, 255, 255, 0.0)";
+				document.getElementById('nav_top').classList.add('fade_out');
+				document.getElementById('myNavbar').style.background = "rgba(255, 255, 255, 0.0)";
+				document.getElementById('myNavbar').classList.add('fade_out');
+			}
+			
+		}
+	</script>
+</html>
