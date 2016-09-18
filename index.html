@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Lewin Cary</title>
+		<title>Lewin Cary - Computer Science Student at Stanford University</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
@@ -11,7 +12,9 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="/favicon.ico" type="image/x-icon">
-
+		<!-- SEO -->
+		<description style="display: none;">Lewin Cary's Personal Website</description>
+		<h1 style="display: none;">Lewin Cary</h1>
 	</head>
 
 	<style>
@@ -267,9 +270,9 @@
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#info" class="nav_text" onclick="info_scroll()"><span class="glyphicon glyphicon-user"></span> Info</a></li>
-						<li><a href="#projects" class="nav_text"><span class="glyphicon glyphicon-log-in"></span> Projects</a></li>
-						<li><a href="#contact" class="nav_text"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+						<li><a href="#info" class="nav_text" onclick="info_scroll()" id="info_trigger"><span class="glyphicon glyphicon-user"></span> Info</a></li>
+						<li><a href="#projects" class="nav_text" id="projects_trigger"><span class="glyphicon glyphicon-log-in"></span> Projects</a></li>
+						<li><a href="#contact" class="nav_text" id="contact_trigger"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -281,7 +284,7 @@
 				<div class="hta horizontal_align" id="name_container">
 					<div id="name">LEWIN CARY</div>
 					<div class="divider"></div>
-					<img id="tagline" src="images/linkedin_smile.jpg"></img>
+					<img id="tagline" src="images/linkedin_smile.jpg" alt='Lewin Cary'></img>
 				</div>
 			</div>
 		</div>
@@ -328,7 +331,7 @@
 				<div class="row tp bp"></div>
 			</div>
 		</div>
-		<a name="projects"></a>
+		<a name="projects" id="projects"></a>
 		<div class="row" id="row4">
 			<div class="container">
 				<div class="row symbol hta tp tm"><span class="glyphicon glyphicon-qrcode"></span></div>
@@ -454,7 +457,7 @@
 								<div class="small_message">(I don't bite)</div>
 								<div class="divider"></div>
 							</div>
-							<form class="col s12" action="https://formspree.io/caryl@stanford.edu" method="POST">
+							<form class="col s12" action="https://formspree.io/caryl@stanford.edu">
 								<div class="row contact">
 									<div class="input-field col s6 m6">
 										<input id="first_name" type="text" name="firstname" class="validate">
@@ -584,6 +587,24 @@
 				document.getElementById('myNavbar').classList.add('fade_out');
 			}
 		});
+
+		window.onload = function() {
+            $("#info_trigger").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#info").offset().top
+                }, 500);
+            });
+			$("#projects_trigger").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#projects").offset().top
+                }, 500);
+            });
+			$("#contact_trigger").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#contact").offset().top
+                }, 500);
+            });
+        }
 
 		var element_to_scroll_to = document.getElementById('info');
 		info_scroll = function() {
